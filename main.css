@@ -1,0 +1,31 @@
+html {
+  height: 100%;
+}
+html, body {
+  margin: 0;
+}
+body {
+  min-height: 100%;
+}
+
+.container {
+  height: 1000px;
+  position: relative;
+}
+
+.friction {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: black;
+  left: 100px;
+  top: 500px;
+}
+.friction-grey {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: grey;
+  left: 100px;
+  top: 500px;
+}

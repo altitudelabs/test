@@ -1,0 +1,15 @@
+{
+  "name": "friction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.16.4",
+    "tween.js": "^16.3.5"
+  }
+}
