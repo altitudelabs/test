@@ -19,7 +19,7 @@ body {
   height: 150px;
   background: black;
   left: 100px;
-  top: 500px;
+  top: 400px;
 }
 .friction-grey {
   position: absolute;
@@ -27,5 +27,5 @@ body {
   height: 150px;
   background: grey;
   left: 100px;
-  top: 500px;
+  top: 400px;
 }
