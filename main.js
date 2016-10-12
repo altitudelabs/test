@@ -62,9 +62,29 @@ class Friction {
 const WindowScroll = new Scroll(window);
 const blackBox = new Friction($('.friction'), 30, 0.5);
 
+
 WindowScroll.subscribe((scroll) => {
   blackBox.move(scroll.speed);
+
+  updateCurrentSection(scroll);
 });
+
+function updateCurrentSection(scroll) {
+  const currentSection = $.makeArray($('.section'))
+  .reduce(function(prev, current) {
+    var target = $(current).data('target');
+
+    if ($(current).offset().top <= scroll.scrollPos + 200) {
+      return target;
+    }
+    return prev;
+  }, 'one');
+
+  if (!$('.level').hasClass(currentSection)) {
+    $('.level').removeClass('one two three');
+    $('.level').addClass(currentSection);
+  }
+}
 
 const paint = (time) => {
   requestAnimationFrame(paint)

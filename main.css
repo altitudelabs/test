@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  height: 1000px;
+  height: 2000px;
   position: relative;
 }
 
@@ -29,3 +29,43 @@ body {
   left: 100px;
   top: 400px;
 }
+.level {
+  position: fixed;
+  right: 0;
+  top: 40px;
+  padding-top: 50px;
+  font-size: 20px;
+  width: 100px;
+  z-index: 1;
+  background: white;
+}
+.level div {
+  transition: font-size 300ms;
+}
+.level.one .one {
+  font-size: 40px;
+}
+.level.two .two {
+  font-size: 40px;
+}
+.level.three .three {
+  font-size: 40px;
+}
+.section {
+  height: 100px;
+  border: 1px solid grey;
+  padding: 25px;
+  position: absolute;
+  width: 100%;
+}
+.section.one {
+  top: 100px;
+}
+.section.two {
+  top: 400px;
+}
+.section.three {
+  top: 700px;
+}
+
+/*.level*/
