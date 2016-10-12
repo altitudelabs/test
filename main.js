@@ -43,7 +43,7 @@ class Friction {
       this.returnTween.start();
     });
 
-    this.move = _.throttle(this.move, 100);
+    this.move = _.throttle(this.move, 17);
   }
   move(speed) {
     if (speed === 0) { return; }
